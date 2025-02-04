@@ -1,0 +1,71 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "height": 34,
+
+    "modules-left": ["hyprland/workspaces", "custom/spotify"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["tray", "pulseaudio", "network", "clock"],
+    
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "disable-scroll": true
+    },
+    "hyprland/window": {
+        "max-length": 80,
+        "tooltip": false
+    },
+    "clock": {
+        "format": "{:%a %d %b %H:%M}",
+        "tooltip": false
+    },
+    "network": {
+        "format": "{icon}",
+        "format-alt": "{ipaddr}/{cidr} {icon}",
+        "format-alt-click": "click-right",
+        "format-icons": {
+            "wifi": [" {ifname}", " {ifname}" ," {ifname}"],
+            "ethernet": [" Ethernet"],
+            "disconnected": [""]
+        },
+    "tooltip": false
+    },
+
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+        "headphone": " ",
+        "hands-free": " ",
+        "headset": " ",
+        "phone": " ",
+        "portable": " ",
+        "car": " ",
+        "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    
+    "custom/spotify": {
+        "interval": 1,
+        "return-type": "json",
+        "exec": "~/.config/waybar/modules/spotify.sh",
+        "exec-if": "pgrep spotify",
+        "escape": true
+    },
+    "custom/test": {
+        "format": "{}",
+        "exec": "/tmp/test blub",
+        "param": "blah",
+        "interval": 5
+    },
+      
+    "tray": {
+        "icon-size": 18,
+        "spacing":10
+    }
+}

@@ -1,0 +1,109 @@
+* {
+    border:        none;
+    border-radius: 0;
+    font-family:   Sans;
+    font-size:     13px;
+    box-shadow:    none;
+    text-shadow:   none;
+    transition-duration: 0s;
+}
+
+window {
+    background-color: rgba(0,0,0,0);
+    border-bottom: 0px solid #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#window {
+    color:      rgba(217, 216, 216, 1);
+    background: rgba(0,0,0,0.5);
+    font-weight: bold;
+    margin: 2px 1px 3px 1px;
+    padding: 0px 10px;
+    border-radius: 15px;
+    border: 5px;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+#workspaces {
+    font-weight: bold;
+    background: rgba(0,0,0,0.5);
+    margin: 2px 6px 3px 6px;
+    padding: 0px 3px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+#workspaces button {
+    color:      rgba(217, 216, 216, 0.4);
+    margin: 2px 1px 3px 1px;
+    padding: 0px 3px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+#workspaces button.visible {
+    color:      rgba(217, 216, 216, 1);
+    margin: 2px 1px 3px 1px;
+    padding: 0px 3px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+#workspaces button.focused {
+    border-top: 3px solid rgba(217, 216, 216, 1);
+    border-bottom: 3px solid rgba(217, 216, 216, 0);
+    margin: 2px 1px 3px 1px;
+    padding: 0px 3px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+#workspaces button.urgent {
+    color:      rgba(238, 46, 36, 1);
+    margin: 2px 1px 3px 1px;
+    padding: 0px 3px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+#mode, #network, #pulseaudio {
+    margin: 2px 6px 3px 6px;
+    min-width:  25px;
+    font-weight: bold;
+    background: rgba(0,0,0,0.5);
+    padding: 0px 6px;
+    border-radius: 15px;
+    border: 0px;
+}
+
+#clock {
+    margin: 2px 6px 3px 6px;
+    min-width:  140px;
+    font-weight: bold;
+    background: rgba(0,0,0,0.5);
+    padding: 0px 0px;
+    border-radius: 15px;
+    border: 0px;
+}
+
+#custom-spotify {
+    padding: 0 10px;
+    font-weight: bold;
+    background: rgba(0,0,0,0.5);
+    margin: 2px 6px 3px 6px;
+    border-radius: 15px;
+    border: 0px;
+}
+
+#tray {
+    margin: 2px 6px 3px 6px;
+    background: rgba(0,0,0,0.5);
+    padding: 0px 6px;
+}
+
+    
