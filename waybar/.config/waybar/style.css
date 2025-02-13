@@ -1,7 +1,7 @@
 * {
     border:        none;
     border-radius: 0;
-    font-family:   Sans;
+    font-family:   'Cascadia Code', "Font Awesome 6 Free Solid", "Font Awesome 6 Free Regular", "Font Awesome 6 Brands Regular", 'Nerd-Font', 'Nerd-Fonts-Symbols', sans-serif;
     font-size:     13px;
     box-shadow:    none;
     text-shadow:   none;
@@ -55,8 +55,8 @@ window#waybar.empty #window {
 }
 
 #workspaces button.focused {
-    border-top: 3px solid rgba(217, 216, 216, 1);
-    border-bottom: 3px solid rgba(217, 216, 216, 0);
+    border-top: 3px rgba(217, 216, 216, 1);
+    border-bottom: 3px rgba(217, 216, 216, 0);
     margin: 2px 1px 3px 1px;
     padding: 0px 3px;
     border-radius: 10px;
@@ -71,7 +71,8 @@ window#waybar.empty #window {
     border: 0px;
 }
 
-#mode, #network, #pulseaudio {
+#mode, #network, #battery, #pulseaudio {
+    color:      rgba(217, 216, 216, 1);
     margin: 2px 6px 3px 6px;
     min-width:  25px;
     font-weight: bold;
@@ -82,6 +83,7 @@ window#waybar.empty #window {
 }
 
 #clock {
+    color:      rgba(217, 216, 216, 1);
     margin: 2px 6px 3px 6px;
     min-width:  140px;
     font-weight: bold;
@@ -92,6 +94,7 @@ window#waybar.empty #window {
 }
 
 #custom-spotify {
+    color:      rgba(217, 216, 216, 1);
     padding: 0 10px;
     font-weight: bold;
     background: rgba(0,0,0,0.5);
@@ -102,7 +105,6 @@ window#waybar.empty #window {
 
 #tray {
     margin: 2px 6px 3px 6px;
-    background: rgba(0,0,0,0.5);
     padding: 0px 6px;
 }
 
