@@ -71,7 +71,7 @@ window#waybar.empty #window {
     border: 0px;
 }
 
-#mode, #network, #battery, #pulseaudio {
+#mode, #network, #battery, #pulseaudio, #custom-notifications {
     color:      rgba(217, 216, 216, 1);
     margin: 2px 6px 3px 6px;
     min-width:  25px;
@@ -80,6 +80,10 @@ window#waybar.empty #window {
     padding: 0px 6px;
     border-radius: 15px;
     border: 0px;
+}
+
+#custom-notification {
+    font-family: "NotoSansMono Nerd Font";
 }
 
 #clock {
