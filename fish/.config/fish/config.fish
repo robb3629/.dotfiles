@@ -18,5 +18,9 @@ fish_add_path /home/rob/.local/bin
 function fish_greeting
     echo Hello friend!
     echo The time is (set_color yellow; date +%T; set_color normal) and this machine is called $hostname
-    echo $(kitten icat ~/Downloads/Sanic.webp)
+#    echo $(kitten icat ~/Downloads/jimcarrey1-1247787973.jpg)
+end
+
+function disable_focus_events --on-event fish_prompt
+    printf '\e[?1004l'
 end
